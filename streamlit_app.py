@@ -20,9 +20,9 @@ streamlit.dataframe(fruits_to_show)
 # Display the table on the page.
 #streamlit.dataframe(my_fruit_list)
 
-streamlit.header("Fruityvice Fruit Advice!")
-customer_fruit_choice = streamlit.text_input ('what fruit you would like info on?','Banana')
-streamlite.write('The user entered',customer_fruit_choice)
+streamlit.header('Fruityvice Fruit Advice!')
+customer_fruit_choice = streamlit.text_input('What fruit you would like info on?', 'Banana')
+streamlite.write('The user entered', customer_fruit_choice)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + customer_fruit_choice)
 # streamlit.text(fruityvice_response.json())
 # json version of the response gets normalized
