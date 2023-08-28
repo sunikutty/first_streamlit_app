@@ -37,5 +37,3 @@ my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.header("Fruitload list contains")
 streamlit.dataframe(my_data_row)
-
-
